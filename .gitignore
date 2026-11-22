@@ -1,0 +1,22 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+!frontend/.env.single
+!frontend/.env.multi
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+# Frontend
+node_modules/
+dist/
+coverage/
+# Local data and generated reports
+.runtime/
+evaluations/results/*
+.DS_Store

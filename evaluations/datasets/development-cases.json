@@ -1,0 +1,11 @@
+{
+  "version": "development-v1",
+  "split": "development",
+  "cases": [
+    {"sample_key": "complete", "expected_codes": [], "expected_installment": "4700.45", "expected_recommendation": "ready_for_officer"},
+    {"sample_key": "missing", "expected_codes": ["missing_bank_transactions"], "expected_installment": "8774.18", "expected_recommendation": "needs_information"},
+    {"sample_key": "mismatch", "expected_codes": ["revenue_mismatch"], "expected_installment": "2663.59", "expected_recommendation": "needs_information"},
+    {"sample_key": "policy", "expected_codes": ["short_operating_history", "revenue_below_policy", "dscr_below_policy"], "expected_installment": "4700.45", "expected_recommendation": "policy_exception"},
+    {"sample_key": "insufficient", "expected_codes": ["missing_profit_and_loss", "missing_bank_transactions"], "expected_installment": "1566.82", "expected_recommendation": "needs_information"}
+  ]
+}

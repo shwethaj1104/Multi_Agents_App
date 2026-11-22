@@ -1,0 +1,73 @@
+/* Shared workspace density across every page and architecture. */
+.main-content {
+  max-width: none;
+  padding: 24px 28px;
+}
+.main-content .page-heading {
+  margin-bottom: 18px;
+}
+.main-content .case-header.case-header--compact {
+  margin-bottom: 18px;
+}
+.main-content .case-workspace {
+  gap: 20px;
+}
+.main-content .panel-heading {
+  padding: 18px 20px;
+}
+.main-content .form-panel,
+.main-content .evidence-panel,
+.main-content .approval-card {
+  padding: 20px;
+}
+.main-content section.benchmark-controls,
+.main-content section.evaluation-panel {
+  padding: 20px;
+}
+.main-content .review-placeholder {
+  padding: 28px 20px;
+}
+.main-content .benchmark-empty {
+  padding: 30px 20px;
+}
+.main-content .workflow-diagram {
+  max-width: 1000px;
+  padding: 20px;
+}
+.main-content .workflow-motion-caption {
+  padding-inline: 20px;
+}
+.main-content table tbody td {
+  padding-block: 11px;
+}
+.main-content table thead th {
+  padding-block: 12px;
+}
+/* Results content already shares its panel inset; avoid a second inset on its toolbar. */
+.main-content section.evaluation-panel > .panel-heading {
+  padding: 0 0 18px;
+}
+@media (max-width: 700px) {
+  .main-content {
+    padding: 18px 16px;
+  }
+  .main-content .panel-heading {
+    padding: 16px;
+  }
+  .main-content .form-panel,
+  .main-content .evidence-panel,
+  .main-content .approval-card,
+  .main-content section.benchmark-controls,
+  .main-content section.evaluation-panel {
+    padding: 16px;
+  }
+  .main-content .case-workspace {
+    gap: 16px;
+  }
+  .main-content .workflow-diagram {
+    padding: 16px;
+  }
+  .main-content .workflow-motion-caption {
+    padding-inline: 16px;
+  }
+}

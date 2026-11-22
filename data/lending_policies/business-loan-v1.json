@@ -1,0 +1,13 @@
+{
+  "version": "fictional-sme-v1",
+  "name": "LoanDesk demonstration business lending policy",
+  "disclaimer": "Fictional policy for synthetic portfolio cases, not a real bank's credit rules.",
+  "clauses": [
+    {"id": "DOC-01", "text": "A profit-and-loss statement and twelve months of bank transaction records are required."},
+    {"id": "ELIG-01", "text": "The business must have operated for at least 24 months.", "minimum_months": 24},
+    {"id": "FIN-01", "text": "Annual revenue must be at least AED 250000.", "minimum_revenue": "250000"},
+    {"id": "FIN-02", "text": "Debt service coverage must be at least 1.25, including the proposed loan installment.", "minimum_dscr": "1.25"},
+    {"id": "EVID-01", "text": "Reported revenue and twelve-month bank income differing by more than 5 percent require clarification.", "tolerance": "0.05"},
+    {"id": "HUM-01", "text": "A human loan officer must review and approve the exact assessment revision. This does not authorize loan disbursement."}
+  ]
+}
