@@ -1,0 +1,82 @@
+.export-menu-trigger {
+  anchor-name: --export-menu-trigger;
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+}
+.export-menu-chevron {
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+}
+.export-format-menu {
+  position: fixed;
+  position-anchor: --export-menu-trigger;
+  inset: auto;
+  top: anchor(bottom);
+  right: anchor(right);
+  margin: 8px 0 0;
+  padding: 8px;
+  width: 280px;
+  max-width: calc(100vw - 24px);
+  border: 1px solid #d3dfe8;
+  border-radius: 12px;
+  background: linear-gradient(145deg, white, #f6f9fb);
+  box-shadow: 0 12px 35px #233a5026;
+  color: #233a50;
+  position-try-fallbacks: flip-block, flip-inline;
+}
+.export-menu-label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: #61798d;
+  padding: 8px 10px;
+}
+.export-format-menu button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 10px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: #233a50;
+  text-align: left;
+  cursor: pointer;
+}
+.export-format-menu button:hover,
+.export-format-menu button:focus-visible {
+  background: #e7eef4;
+}
+.export-file-icon {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 7px;
+  background: #e7eef4;
+  border: 1px solid #d5e0e9;
+  font-size: 9px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.export-format-menu strong {
+  display: block;
+  font-size: 12px;
+}
+.export-format-menu small {
+  display: block;
+  font-size: 10px;
+  color: #526b80;
+  margin-top: 3px;
+}
+@supports not (top: anchor(bottom)) {
+  .export-format-menu {
+    inset: 20% auto auto 50%;
+    transform: translateX(-50%);
+  }
+}
